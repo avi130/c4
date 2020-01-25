@@ -51,16 +51,6 @@ void toLittelChar( char *word){
     }
 
 
-
-/*
-typedef struct trieNode
-{
-    struct trieNode *children[childrenNum];
-    bool isLeaf;
-    int numOfWords;
-}trieNode;
-*/
-
 trieNode *addNode(void)
 {
 
@@ -146,16 +136,3 @@ void freeMemory(trieNode *root){
         }
     }
 }
-
-/*
-void freeMemory(trieNode* root){
-    for (int i = 0; i < childrenNum; i++ ){
-        if(root -> children[i] != NULL){
-            freeMemory(root -> children[i]);
-        }
-    }
-    if (root != NULL){
-        free(root);
-    }
-}
- */

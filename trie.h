@@ -37,7 +37,5 @@ void toLittelChar( char *word);
 
 void freeMemory(trieNode *root);
 
-char *inputString(FILE* fp, size_t size);
-
 
 #endif //PROJECT4_TRIE_H
